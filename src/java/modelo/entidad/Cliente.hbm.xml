@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 3/10/2021 11:42:38 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.entidad.Cliente" table="cliente" catalog="fidelizaci&#243;n" optimistic-lock="version">
+        <id name="cedula" type="int">
+            <column name="cedula" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="30" />
+        </property>
+        <property name="direccion" type="string">
+            <column name="direccion" length="30" />
+        </property>
+        <property name="ciudad" type="string">
+            <column name="ciudad" length="20" />
+        </property>
+        <property name="telefono" type="java.lang.Long">
+            <column name="telefono" precision="10" scale="0" />
+        </property>
+        <property name="celular" type="java.lang.Long">
+            <column name="celular" precision="10" scale="0" />
+        </property>
+        <property name="correo" type="string">
+            <column name="correo" length="30" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 3/10/2021 11:42:38 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.entidad.Difuncion" table="difuncion" catalog="fidelizaci&#243;n" optimistic-lock="version">
+        <id name="idDifuncion" type="java.lang.Integer">
+            <column name="id_difuncion" />
+            <generator class="identity" />
+        </id>
+        <property name="cedulaCliente" type="java.lang.Integer">
+            <column name="cedula_cliente" />
+        </property>
+        <property name="nombreCliente" type="string">
+            <column name="nombre_cliente" length="30" />
+        </property>
+        <property name="campana" type="string">
+            <column name="campana" length="30" />
+        </property>
+        <property name="idNotificacion" type="java.lang.Integer">
+            <column name="id_notificacion" />
+        </property>
+        <property name="inscrito" type="string">
+            <column name="inscrito" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>
